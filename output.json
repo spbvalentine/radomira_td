@@ -1,0 +1,6306 @@
+{
+  "draw": 1,
+  "recordsTotal": 2006,
+  "recordsFiltered": 2006,
+  "previous": null,
+  "next": "http://127.0.0.1:8000/api/calls/?page=2",
+  "results": [
+    {
+      "id": 4,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 3,
+        "description": "Младший подросток (11…14 лет)"
+      },
+      "marital_status": {
+        "code": 2,
+        "description": "Брак"
+      },
+      "social_status": {
+        "code": 2,
+        "description": "Работающие"
+      },
+      "emotional_state": {
+        "code": 3,
+        "description": "Горе, печаль"
+      },
+      "problem": {
+        "code": 1003,
+        "group": 10,
+        "description": "Текущие жизненные изменения (беременность, новая работа, перемена места жительства, другие изменения в жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 3,
+        "description": "Периодическое обострение"
+      },
+      "help_provided": {
+        "code": 2,
+        "description": "Доверительный контакт, продвижение в понимании себя, проблемы"
+      },
+      "frequency": {
+        "code": 2,
+        "description": "Повторное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1002,
+        "description": "ситуационный (болезнь, трав ма, авария, катастрофа,…)"
+      },
+      "call_date": "2025-09-14",
+      "call_time": "23:23:00",
+      "created_at": "2025-09-14T21:52:03.956962Z",
+      "updated_at": "2025-09-14T21:52:03.957004Z"
+    },
+    {
+      "id": 2,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 1,
+        "description": "Мужской"
+      },
+      "age_group": {
+        "code": 3,
+        "description": "Младший подросток (11…14 лет)"
+      },
+      "marital_status": {
+        "code": 2,
+        "description": "Брак"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 1,
+        "description": "Спокойствие"
+      },
+      "problem": {
+        "code": 1003,
+        "group": 10,
+        "description": "Текущие жизненные изменения (беременность, новая работа, перемена места жительства, другие изменения в жизни)"
+      },
+      "problem_duration": {
+        "code": 1,
+        "description": "до недели"
+      },
+      "emotion_dynamic": {
+        "code": 1,
+        "description": "Стабильное состояние"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 2,
+        "description": "Повторное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1101,
+        "description": "суицидальны идеи, мысли, переживания"
+      },
+      "call_date": "2025-09-14",
+      "call_time": "12:12:00",
+      "created_at": "2025-09-14T20:55:40.955168Z",
+      "updated_at": "2025-09-15T21:23:37.520216Z"
+    },
+    {
+      "id": 1,
+      "duration": {
+        "code": 1,
+        "description": "до 1 мин."
+      },
+      "gender": {
+        "code": 1,
+        "description": "Мужской"
+      },
+      "age_group": {
+        "code": 2,
+        "description": "Младший школьник (7...10 лет)"
+      },
+      "marital_status": {
+        "code": 1,
+        "description": "Холост"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 1,
+        "description": "Спокойствие"
+      },
+      "problem": {
+        "code": 1003,
+        "group": 10,
+        "description": "Текущие жизненные изменения (беременность, новая работа, перемена места жительства, другие изменения в жизни)"
+      },
+      "problem_duration": {
+        "code": 1,
+        "description": "до недели"
+      },
+      "emotion_dynamic": {
+        "code": 1,
+        "description": "Стабильное состояние"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1004,
+        "description": "интеграционный (позитивные измерения, вызывающие стресс: вступление в брак, новые знакомства, повышения по службе, …)"
+      },
+      "call_date": "2025-09-14",
+      "call_time": "11:11:00",
+      "created_at": "2025-09-14T14:48:12.409592Z",
+      "updated_at": "2025-09-14T22:41:44.985035Z"
+    },
+    {
+      "id": 3,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 3,
+        "description": "Младший подросток (11…14 лет)"
+      },
+      "marital_status": {
+        "code": 2,
+        "description": "Брак"
+      },
+      "social_status": {
+        "code": 2,
+        "description": "Работающие"
+      },
+      "emotional_state": {
+        "code": 3,
+        "description": "Горе, печаль"
+      },
+      "problem": {
+        "code": 1004,
+        "group": 10,
+        "description": "Интеграционный (позитивные измерения, вызывающие стресс: вступление в брак, новые знакомства, повышения по службе, …)"
+      },
+      "problem_duration": {
+        "code": 1,
+        "description": "до недели"
+      },
+      "emotion_dynamic": {
+        "code": 1,
+        "description": "Стабильное состояние"
+      },
+      "help_provided": {
+        "code": 2,
+        "description": "Доверительный контакт, продвижение в понимании себя, проблемы"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1004,
+        "description": "интеграционный (позитивные измерения, вызывающие стресс: вступление в брак, новые знакомства, повышения по службе, …)"
+      },
+      "call_date": "2025-09-14",
+      "call_time": "11:11:00",
+      "created_at": "2025-09-14T21:49:03.556561Z",
+      "updated_at": "2025-09-15T21:29:34.109902Z"
+    },
+    {
+      "id": 5,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": null,
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:07:26.182248Z",
+      "updated_at": "2025-09-17T18:07:26.182256Z"
+    },
+    {
+      "id": 6,
+      "duration": {
+        "code": 5,
+        "description": "до 60 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:09:11.974410Z",
+      "updated_at": "2025-09-17T18:46:47.789437Z"
+    },
+    {
+      "id": 7,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:37.837194Z",
+      "updated_at": "2025-09-17T18:26:37.837210Z"
+    },
+    {
+      "id": 8,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:37.843021Z",
+      "updated_at": "2025-09-17T18:26:37.843028Z"
+    },
+    {
+      "id": 9,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:37.952360Z",
+      "updated_at": "2025-09-17T18:26:37.952369Z"
+    },
+    {
+      "id": 10,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:37.958632Z",
+      "updated_at": "2025-09-17T18:26:37.958644Z"
+    },
+    {
+      "id": 11,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:37.993698Z",
+      "updated_at": "2025-09-17T18:26:37.993715Z"
+    },
+    {
+      "id": 12,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.018130Z",
+      "updated_at": "2025-09-17T18:26:38.018139Z"
+    },
+    {
+      "id": 13,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.023145Z",
+      "updated_at": "2025-09-17T18:26:38.023153Z"
+    },
+    {
+      "id": 14,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.042130Z",
+      "updated_at": "2025-09-17T18:58:06.134859Z"
+    },
+    {
+      "id": 15,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.043610Z",
+      "updated_at": "2025-09-17T18:26:38.043616Z"
+    },
+    {
+      "id": 16,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.069834Z",
+      "updated_at": "2025-09-17T18:54:59.790534Z"
+    },
+    {
+      "id": 17,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.065102Z",
+      "updated_at": "2025-09-17T18:46:18.880645Z"
+    },
+    {
+      "id": 18,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.096170Z",
+      "updated_at": "2025-09-17T18:26:38.096175Z"
+    },
+    {
+      "id": 19,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.103610Z",
+      "updated_at": "2025-09-17T18:26:38.103614Z"
+    },
+    {
+      "id": 20,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.085235Z",
+      "updated_at": "2025-09-17T18:26:38.085239Z"
+    },
+    {
+      "id": 21,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.108992Z",
+      "updated_at": "2025-09-17T18:26:38.108996Z"
+    },
+    {
+      "id": 22,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.071589Z",
+      "updated_at": "2025-09-17T18:26:38.071594Z"
+    },
+    {
+      "id": 23,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.114879Z",
+      "updated_at": "2025-09-17T18:26:38.114883Z"
+    },
+    {
+      "id": 24,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.095332Z",
+      "updated_at": "2025-09-17T18:26:38.095336Z"
+    },
+    {
+      "id": 25,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.114171Z",
+      "updated_at": "2025-09-17T18:26:38.114175Z"
+    },
+    {
+      "id": 26,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.114573Z",
+      "updated_at": "2025-09-17T19:06:29.298149Z"
+    },
+    {
+      "id": 27,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.109188Z",
+      "updated_at": "2025-09-17T18:26:38.109192Z"
+    },
+    {
+      "id": 28,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 3,
+        "description": "Регулярное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.110530Z",
+      "updated_at": "2025-09-17T18:55:26.708315Z"
+    },
+    {
+      "id": 29,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.099292Z",
+      "updated_at": "2025-09-17T18:26:38.099297Z"
+    },
+    {
+      "id": 30,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 3,
+        "description": "Периодическое обострение"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.113474Z",
+      "updated_at": "2025-09-17T18:31:41.760093Z"
+    },
+    {
+      "id": 31,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.116758Z",
+      "updated_at": "2025-09-17T18:26:38.116763Z"
+    },
+    {
+      "id": 32,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.105464Z",
+      "updated_at": "2025-09-17T18:26:38.105469Z"
+    },
+    {
+      "id": 33,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.088843Z",
+      "updated_at": "2025-09-17T18:26:38.088848Z"
+    },
+    {
+      "id": 34,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.108205Z",
+      "updated_at": "2025-09-17T18:26:38.108209Z"
+    },
+    {
+      "id": 35,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.107997Z",
+      "updated_at": "2025-09-17T18:26:38.108001Z"
+    },
+    {
+      "id": 36,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.092209Z",
+      "updated_at": "2025-09-17T18:26:38.092217Z"
+    },
+    {
+      "id": 37,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.108782Z",
+      "updated_at": "2025-09-17T18:26:38.108786Z"
+    },
+    {
+      "id": 38,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.093500Z",
+      "updated_at": "2025-09-17T18:26:38.093506Z"
+    },
+    {
+      "id": 39,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.099517Z",
+      "updated_at": "2025-09-17T18:26:38.099522Z"
+    },
+    {
+      "id": 40,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.044497Z",
+      "updated_at": "2025-09-17T18:26:38.044502Z"
+    },
+    {
+      "id": 41,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.102130Z",
+      "updated_at": "2025-09-17T18:26:38.102135Z"
+    },
+    {
+      "id": 42,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.101364Z",
+      "updated_at": "2025-09-17T18:26:38.101368Z"
+    },
+    {
+      "id": 43,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.028140Z",
+      "updated_at": "2025-09-17T18:26:38.028150Z"
+    },
+    {
+      "id": 44,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.083275Z",
+      "updated_at": "2025-09-17T18:26:38.083281Z"
+    },
+    {
+      "id": 45,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.108548Z",
+      "updated_at": "2025-09-17T18:26:38.108552Z"
+    },
+    {
+      "id": 46,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.107781Z",
+      "updated_at": "2025-09-17T18:26:38.107786Z"
+    },
+    {
+      "id": 47,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.113202Z",
+      "updated_at": "2025-09-17T18:26:38.113206Z"
+    },
+    {
+      "id": 48,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.113683Z",
+      "updated_at": "2025-09-17T18:26:38.113687Z"
+    },
+    {
+      "id": 49,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.099000Z",
+      "updated_at": "2025-09-17T18:26:38.099005Z"
+    },
+    {
+      "id": 50,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.099990Z",
+      "updated_at": "2025-09-17T18:26:38.099994Z"
+    },
+    {
+      "id": 51,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.103120Z",
+      "updated_at": "2025-09-17T18:26:38.103124Z"
+    },
+    {
+      "id": 52,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.071031Z",
+      "updated_at": "2025-09-17T18:26:38.071037Z"
+    },
+    {
+      "id": 53,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.084934Z",
+      "updated_at": "2025-09-17T18:26:38.084939Z"
+    },
+    {
+      "id": 54,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.067228Z",
+      "updated_at": "2025-09-17T18:26:38.067234Z"
+    },
+    {
+      "id": 55,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.102488Z",
+      "updated_at": "2025-09-17T18:26:38.102492Z"
+    },
+    {
+      "id": 56,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.112929Z",
+      "updated_at": "2025-09-17T18:26:38.112935Z"
+    },
+    {
+      "id": 57,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.971908Z",
+      "updated_at": "2025-09-17T18:26:38.971937Z"
+    },
+    {
+      "id": 58,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.979350Z",
+      "updated_at": "2025-09-17T18:26:38.979360Z"
+    },
+    {
+      "id": 59,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.986674Z",
+      "updated_at": "2025-09-17T18:26:38.986683Z"
+    },
+    {
+      "id": 60,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:38.998257Z",
+      "updated_at": "2025-09-17T18:26:38.998274Z"
+    },
+    {
+      "id": 61,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.014626Z",
+      "updated_at": "2025-09-17T18:26:39.014635Z"
+    },
+    {
+      "id": 62,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.020047Z",
+      "updated_at": "2025-09-17T18:26:39.020063Z"
+    },
+    {
+      "id": 63,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.031377Z",
+      "updated_at": "2025-09-17T18:26:39.031392Z"
+    },
+    {
+      "id": 64,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.057908Z",
+      "updated_at": "2025-09-17T18:26:39.057924Z"
+    },
+    {
+      "id": 65,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.065369Z",
+      "updated_at": "2025-09-17T18:26:39.065375Z"
+    },
+    {
+      "id": 66,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.072574Z",
+      "updated_at": "2025-09-17T18:26:39.072579Z"
+    },
+    {
+      "id": 67,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.086973Z",
+      "updated_at": "2025-09-17T18:26:39.086982Z"
+    },
+    {
+      "id": 68,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.215917Z",
+      "updated_at": "2025-09-17T18:26:39.215926Z"
+    },
+    {
+      "id": 69,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.231916Z",
+      "updated_at": "2025-09-17T18:26:39.231921Z"
+    },
+    {
+      "id": 70,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.224810Z",
+      "updated_at": "2025-09-17T18:26:39.224817Z"
+    },
+    {
+      "id": 71,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.240384Z",
+      "updated_at": "2025-09-17T18:26:39.240388Z"
+    },
+    {
+      "id": 72,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.241922Z",
+      "updated_at": "2025-09-17T18:26:39.241927Z"
+    },
+    {
+      "id": 73,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.239822Z",
+      "updated_at": "2025-09-17T18:26:39.239826Z"
+    },
+    {
+      "id": 74,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.240647Z",
+      "updated_at": "2025-09-17T18:26:39.240650Z"
+    },
+    {
+      "id": 75,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.248686Z",
+      "updated_at": "2025-09-17T18:26:39.248691Z"
+    },
+    {
+      "id": 76,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.246053Z",
+      "updated_at": "2025-09-17T18:26:39.246057Z"
+    },
+    {
+      "id": 77,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.256848Z",
+      "updated_at": "2025-09-17T18:26:39.256852Z"
+    },
+    {
+      "id": 78,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.237205Z",
+      "updated_at": "2025-09-17T18:26:39.237210Z"
+    },
+    {
+      "id": 79,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.261672Z",
+      "updated_at": "2025-09-17T18:26:39.261676Z"
+    },
+    {
+      "id": 80,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.253765Z",
+      "updated_at": "2025-09-17T18:26:39.253769Z"
+    },
+    {
+      "id": 81,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.261105Z",
+      "updated_at": "2025-09-17T18:26:39.261109Z"
+    },
+    {
+      "id": 82,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.262026Z",
+      "updated_at": "2025-09-17T18:26:39.262030Z"
+    },
+    {
+      "id": 83,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.265484Z",
+      "updated_at": "2025-09-17T18:26:39.265489Z"
+    },
+    {
+      "id": 84,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.263627Z",
+      "updated_at": "2025-09-17T18:26:39.263631Z"
+    },
+    {
+      "id": 85,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.260112Z",
+      "updated_at": "2025-09-17T18:26:39.260116Z"
+    },
+    {
+      "id": 86,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.261477Z",
+      "updated_at": "2025-09-17T18:26:39.261480Z"
+    },
+    {
+      "id": 87,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.236970Z",
+      "updated_at": "2025-09-17T18:26:39.236974Z"
+    },
+    {
+      "id": 88,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.253325Z",
+      "updated_at": "2025-09-17T18:26:39.253330Z"
+    },
+    {
+      "id": 89,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.239353Z",
+      "updated_at": "2025-09-17T18:26:39.239357Z"
+    },
+    {
+      "id": 90,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.256173Z",
+      "updated_at": "2025-09-17T18:26:39.256177Z"
+    },
+    {
+      "id": 91,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.241467Z",
+      "updated_at": "2025-09-17T18:26:39.241472Z"
+    },
+    {
+      "id": 92,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.260717Z",
+      "updated_at": "2025-09-17T18:26:39.260721Z"
+    },
+    {
+      "id": 93,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.245219Z",
+      "updated_at": "2025-09-17T18:26:39.245225Z"
+    },
+    {
+      "id": 94,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.263397Z",
+      "updated_at": "2025-09-17T18:26:39.263401Z"
+    },
+    {
+      "id": 95,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.247994Z",
+      "updated_at": "2025-09-17T18:26:39.247997Z"
+    },
+    {
+      "id": 96,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.247185Z",
+      "updated_at": "2025-09-17T18:26:39.247190Z"
+    },
+    {
+      "id": 97,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.254474Z",
+      "updated_at": "2025-09-17T18:26:39.254478Z"
+    },
+    {
+      "id": 98,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.257087Z",
+      "updated_at": "2025-09-17T18:26:39.257092Z"
+    },
+    {
+      "id": 99,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.257292Z",
+      "updated_at": "2025-09-17T18:26:39.257296Z"
+    },
+    {
+      "id": 100,
+      "duration": {
+        "code": 2,
+        "description": "до 5 мин."
+      },
+      "gender": {
+        "code": 2,
+        "description": "Женский"
+      },
+      "age_group": {
+        "code": 5,
+        "description": "Молодежь (19…25 лет)"
+      },
+      "marital_status": {
+        "code": 3,
+        "description": "Развод"
+      },
+      "social_status": {
+        "code": 1,
+        "description": "Школьники, учащиеся, студенты"
+      },
+      "emotional_state": {
+        "code": 5,
+        "description": "Отчаяние"
+      },
+      "problem": {
+        "code": 1102,
+        "group": 11,
+        "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+      },
+      "problem_duration": {
+        "code": 2,
+        "description": "до 3-х месяцев"
+      },
+      "emotion_dynamic": {
+        "code": 2,
+        "description": "Нарастание актуальности"
+      },
+      "help_provided": {
+        "code": 3,
+        "description": "Психологическая, эмоциональная поддержка"
+      },
+      "frequency": {
+        "code": 1,
+        "description": "Первичное"
+      },
+      "consultant": {
+        "id": 1,
+        "username": "admin",
+        "first_name": "Имя",
+        "last_name": "Фамилия",
+        "full_name": "Имя Фамилия"
+      },
+      "crisis_situation": {
+        "code": 1102,
+        "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощ ание, упорядочивание жизни)"
+      },
+      "call_date": "2025-04-05",
+      "call_time": "14:30:00",
+      "created_at": "2025-09-17T18:26:39.236626Z",
+      "updated_at": "2025-09-17T18:26:39.236632Z"
+    }
+  ]
+}

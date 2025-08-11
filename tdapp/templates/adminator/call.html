@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>Forms</title>
+    <script defer="defer" src="/static/adminator/main.js"></script>
+    <!-- Font Awesome для иконок -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  <body class="app">
+    <style>
+    /* Контейнер для уведомлений */
+    .toast-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .toast {
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideIn 0.3s forwards;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+    @keyframes slideIn { to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeOut { to { opacity: 0; transform: translateY(20px); height: 0; margin: 0; padding: 0; overflow: hidden; } }
+    .toast.hide { animation: fadeOut 0.3s forwards; }
+
+    .toast.success { background: #28a745; }
+    .toast.error   { background: #dc3545; }
+    .toast.warn    { background: #ffc107; color: #000; }
+
+    /* Загрузчик */
+    #loader {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(255,255,255,0.9); display: flex; justify-content: center; align-items: center;
+      z-index: 9999; transition: opacity 0.5s ease;
+    }
+    #loader.fadeOut { opacity: 0; pointer-events: none; }
+    .spinner {
+      width: 40px; height: 40px; border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db; border-radius: 50%; animation: spin 1s linear infinite;
+    }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+    /* Ошибки полей */
+    .form-control.is-invalid, .form-select.is-invalid {
+      border-color: #dc3545;
+      box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+    }
+
+    /* Кнопки навигации */
+    #prevCallBtn:disabled, #nextCallBtn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  </style>
+
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <script>
+      window.addEventListener('load', function load() {
+        const loader = document.getElementById('loader');
+        setTimeout(function() {
+          loader.classList.add('fadeOut');
+        }, 300);
+      });
+    </script>
+
+    <div>
+      <!-- #Left Sidebar ==================== -->
+      <div class="sidebar">
+        <div class="sidebar-inner">
+          <!-- ### $Sidebar Header ### -->
+          {% include 'adminator/logo.html' %}
+
+          <!-- ### $Sidebar Menu ### -->
+          {% include 'adminator/menu.html' %}
+        </div>
+      </div>
+
+      <!-- #Main ============================ -->
+      <div class="page-container">
+        <!-- ### $Topbar ### -->
+        {% include 'adminator/topbar.html' %}
+
+        <!-- ### $App Screen Content ### -->
+        <main class="main-content bgc-grey-100">
+          <div id="mainContent">
+            <div class="row gap-20 masonry pos-r">
+              <div class="masonry-sizer col-md-6"></div>
+              <div class="masonry-item col-md-12">
+                <div class="bgc-white p-20 bd">
+                  <h4 class="c-grey-900">Регистрация обращений</h4>
+                  <div class="mT-30">
+                      <form id="callForm" class="needs-validation" novalidate>
+
+  <!-- Дата и время -->
+  <div class="row">
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="callDate">Дата обращения</label>
+      <input type="date" class="form-control" id="callDate" required>
+    </div>
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="callTime">Время обращения</label>
+      <input type="time" class="form-control" id="callTime" required>
+    </div>
+  </div>
+
+  <!-- Справочники -->
+  <div class="row">
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="duration">Продолжительность контакта</label>
+      <select id="duration" class="form-control" data-url="/api/durations/" required>
+        <option selected disabled value="">Загрузка...</option>
+      </select>
+    </div>
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="gender">Пол абонента</label>
+      <select id="gender" class="form-control" data-url="/api/genders/" required>
+        <option selected disabled value="">Загрузка...</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="ageGroup">Возрастная группа</label>
+      <select id="ageGroup" class="form-control" data-url="/api/age-groups/" required>
+        <option selected disabled value="">Загрузка...</option>
+      </select>
+    </div>
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="maritalStatus">Семейное положение</label>
+      <select id="maritalStatus" class="form-control" data-url="/api/marital-statuses/" required>
+        <option selected disabled value="">Загрузка...</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="socialStatus">Социальное положение</label>
+      <select id="socialStatus" class="form-control" data-url="/api/social-statuses/" required>
+        <option selected disabled value="">Загрузка...</option>
+      </select>
+    </div>
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="problem">Проблема</label>
+      <select id="problem" class="form-control" data-url="/api/problems/" required>
+        <option selected disabled value="">Загрузка...</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="emotionalState">Эмоциональное состояние</label>
+      <select id="emotionalState" class="form-control" data-url="/api/emotional-states/" required>
+        <option selected disabled value="">Загрузка...</option>
+      </select>
+    </div>
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="crisisSituation">Кризисность ситуации</label>
+      <select id="crisisSituation" class="form-control" data-url="/api/crisis-situations/" required>
+        <option selected disabled value="">Загрузка...</option>
+      </select>
+    </div>
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="problemDuration">Длительность существования проблемы</label>
+      <select id="problemDuration" class="form-control" data-url="/api/problem-durations/" required>
+        <option selected disabled value="">Загрузка...</option>
+      </select>
+    </div>
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="emotionDynamic">Динамика переживаний</label>
+      <select id="emotionDynamic" class="form-control" data-url="/api/emotion-dynamics/" required>
+        <option selected disabled value="">Загрузка...</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="helpProvided">Предоставленная помощь</label>
+      <select id="helpProvided" class="form-control" data-url="/api/help-provided/" required>
+        <option selected disabled value="">Загрузка...</option>
+      </select>
+    </div>
+    <div class="mb-3 col-md-6">
+      <label class="form-label" for="frequency">Периодичность обращений</label>
+      <select id="frequency" class="form-control" data-url="/api/frequencies/" required>
+        <option selected disabled value="">Загрузка...</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="d-flex justify-content-center mT-20">
+    <button type="submit" class="btn btn-success btn-color">Зарегистрировать звонок</button>
+  </div>
+</form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        <!-- ### $App Screen Footer ### -->
+        {% include 'adminator/bottombar.html' %}
+      </div>
+    </div>
+
+    <!-- Контейнер для уведомлений -->
+    <div class="toast-container" id="toastContainer"></div>
+
+<script>
+  // Получение CSRF-токена
+  function getCookie(name) {
+    let cookieValue = null;
+    if (document.cookie && document.cookie !== '') {
+      const cookies = document.cookie.split(';');
+      for (let i = 0; i < cookies.length; i++) {
+        const cookie = cookies[i].trim();
+        if (cookie.substring(0, name.length + 1) === (name + '=')) {
+          cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+          break;
+        }
+      }
+    }
+    return cookieValue;
+  }
+
+  // Уведомления
+function showToast(message, type = "success") {
+        const toast = document.createElement("div");
+        toast.className = `toast align-items-center text-white bg-${type} border-0 show mb-2 p-3 rounded shadow`;
+        toast.innerHTML = `
+          <div class="d-flex">
+            <div class="toast-body">
+              <i class="fas ${type === "success" ? "fa-check-circle" : "fa-exclamation-circle"}"></i>
+              ${message}
+            </div>
+          </div>
+        `;
+        toastContainer.appendChild(toast);
+
+        // Автоудаление через 3 сек
+        setTimeout(() => toast.remove(), 3000);
+      }
+
+  // Загрузка данных в select
+  async function loadOptions(selectId, url) {
+    const select = document.getElementById(selectId);
+    try {
+      const response = await fetch(url);
+      if (!response.ok) throw new Error(`Ошибка загрузки: ${url}`);
+
+      const data = await response.json();
+      const results = data.results || data; // Поддержка пагинации
+
+      // Очистить
+      select.innerHTML = '<option selected disabled value="">Выберите...</option>';
+
+      results.forEach(item => {
+        const option = document.createElement('option');
+        option.value = (item.code !== null && item.code !== undefined) ? item.code : '';
+        option.textContent = item.description || item.name || item;
+        select.appendChild(option);
+      });
+    } catch (error) {
+      console.error(error);
+      select.innerHTML = '<option disabled>Ошибка загрузки</option>';
+      showToast(`Ошибка загрузки: ${selectId}`, 'danger');
+    }
+  }
+
+  // Все поля и их API-эндпоинты
+  const fields = [
+    { id: 'duration', url: '/api/durations/' },
+    { id: 'gender', url: '/api/genders/' },
+    { id: 'ageGroup', url: '/api/age-groups/' },
+    { id: 'maritalStatus', url: '/api/marital-statuses/' },
+    { id: 'socialStatus', url: '/api/social-statuses/' },
+    { id: 'emotionalState', url: '/api/emotional-states/' },
+    { id: 'crisisSituation', url: '/api/crisis-situations/' },
+    { id: 'problem', url: '/api/problems/' },
+    { id: 'problemDuration', url: '/api/problem-durations/' },
+    { id: 'emotionDynamic', url: '/api/emotion-dynamics/' },
+    { id: 'helpProvided', url: '/api/help-provided/' },
+    { id: 'frequency', url: '/api/frequencies/' },
+  ];
+
+  // Загрузить все при старте
+  window.addEventListener('load', () => {
+    fields.forEach(field => {
+      loadOptions(field.id, field.url);
+    });
+
+    // Установить текущую дату
+    const today = new Date().toISOString().split('T')[0];
+    document.getElementById('callDate').value = today;
+  });
+
+  // Обработка отправки формы
+  document.getElementById('callForm').addEventListener('submit', async function(e) {
+    e.preventDefault();
+
+    if (!this.checkValidity()) {
+      this.classList.add('was-validated');
+      showToast('Заполните обязательные поля', 'danger');
+      return;
+    }
+
+    const formData = {
+      call_date: document.getElementById('callDate').value,
+      call_time: document.getElementById('callTime').value,
+      duration: parseInt(document.getElementById('duration').value),
+      gender: parseInt(document.getElementById('gender').value),
+      age_group: parseInt(document.getElementById('ageGroup').value),
+      marital_status: document.getElementById('maritalStatus').value ? parseInt(document.getElementById('maritalStatus').value) : null,
+      social_status: parseInt(document.getElementById('socialStatus').value),
+      problem: parseInt(document.getElementById('problem').value),
+      problem_duration: parseInt(document.getElementById('problemDuration').value),
+      emotional_state: parseInt(document.getElementById('emotionalState').value),
+      emotion_dynamic: parseInt(document.getElementById('emotionDynamic').value),
+      crisis_situation: parseInt(document.getElementById('crisisSituation').value),
+      help_provided: parseInt(document.getElementById('helpProvided').value),
+      frequency: parseInt(document.getElementById('frequency').value)
+    };
+
+    try {
+      const response = await fetch('/api/calls/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'X-CSRFToken': getCookie('csrftoken')
+        },
+        body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+        const result = await response.json();
+        showToast(`Звонок <a href = '/api/calls/${result.id}'>#${result.id}</a> зарегистрирован!`, 'success');
+        this.reset();
+        this.classList.remove('was-validated');
+      } else {
+        const error = await response.json();
+        const msg = Object.entries(error).map(([k,v]) => `${k}: ${v}`).join('; ');
+        showToast(`Ошибка: ${msg}`, 'danger');
+      }
+    } catch (err) {
+      showToast(`🌐 Ошибка сети: ${err.message}`, 'danger');
+    }
+  });
+</script>
+  <script>
+  const callDateInput = document.getElementById('callDate');
+  const today = new Date().toISOString().split('T')[0];
+  if (!callDateInput.value) {
+    callDateInput.value = today;
+  }
+</script>
+  </body>
+</html>

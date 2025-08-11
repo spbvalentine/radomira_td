@@ -1,0 +1,53 @@
+[
+  {
+    "model": "tdapp.crisissituation",
+    "pk": 1,
+    "fields": { "code": 1001, "description": "депривационный (развод, смерть, другие потери)" }
+  },
+  {
+    "model": "tdapp.crisissituation",
+    "pk": 2,
+    "fields": { "code": 1002, "description": "ситуационный (болезнь, трав ма, авария, катастрофа,…)" }
+  },
+  {
+    "model": "tdapp.crisissituation",
+    "pk": 3,
+    "fields": { "code": 1003, "description": "текущие жизненные изменения (беременность, новая работа, перемена места жительства, другие изменения в жизни)" }
+  },
+  {
+    "model": "tdapp.crisissituation",    "pk": 4,
+    "fields": { "code": 1004, "description": "интеграционный (позитивные измерения, вызывающие стресс: вступление в брак, новые знакомства, повышения по службе, …)" }
+  },
+  {
+    "model": "tdapp.crisissituation",    "pk": 5,
+    "fields": { "code": 1005, "description": "другие кризисные переживания" }
+  },
+  {
+    "model": "tdapp.crisissituation",    "pk": 6,
+    "fields": { "code": 1101, "description": "суицидальны идеи, мысли, переживания" }
+  },
+  {
+    "model": "tdapp.crisissituation",    "pk": 7,
+    "fields": { "code": 1102, "description": "суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)" }
+  },
+  {
+    "model": "tdapp.crisissituation",    "pk": 8,
+    "fields": { "code": 1103, "description": "суицидальны действия" }
+  },
+  {
+    "model": "tdapp.crisissituation",    "pk": 9,
+    "fields": { "code": 1104, "description": "предшествующие попытки" }
+  },
+  {
+    "model": "tdapp.crisissituation",    "pk": 10,
+    "fields": { "code": 1105, "description": "суицид близ кого" }
+  },
+  {
+    "model": "tdapp.crisissituation",    "pk": 11,
+    "fields": { "code": 1106, "description": "пост-суицид" }
+  },
+  {
+    "model": "tdapp.crisissituation",    "pk": 12,
+    "fields": { "code": 1107, "description": "другие суицидальны обращения" }
+  }
+]

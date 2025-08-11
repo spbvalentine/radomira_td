@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Редактирование звонка</title>
+
+  <!-- Adminator JS -->
+  <script defer src="/static/adminator/main.js"></script>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+  <!-- Стили -->
+  <style>
+    /* Контейнер для уведомлений */
+    .toast-container {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      z-index: 9999;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    .toast {
+      padding: 12px 16px;
+      border-radius: 8px;
+      font-size: 14px;
+      color: white;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      opacity: 0;
+      transform: translateY(20px);
+      animation: slideIn 0.3s forwards;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      cursor: pointer;
+    }
+    @keyframes slideIn { to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeOut { to { opacity: 0; transform: translateY(20px); height: 0; margin: 0; padding: 0; overflow: hidden; } }
+    .toast.hide { animation: fadeOut 0.3s forwards; }
+
+    .toast.success { background: #28a745; }
+    .toast.error   { background: #dc3545; }
+    .toast.warn    { background: #ffc107; color: #000; }
+
+    /* Загрузчик */
+    #loader {
+      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
+      background: rgba(255,255,255,0.9); display: flex; justify-content: center; align-items: center;
+      z-index: 9999; transition: opacity 0.5s ease;
+    }
+    #loader.fadeOut { opacity: 0; pointer-events: none; }
+    .spinner {
+      width: 40px; height: 40px; border: 4px solid #f3f3f3;
+      border-top: 4px solid #3498db; border-radius: 50%; animation: spin 1s linear infinite;
+    }
+    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
+
+    /* Ошибки полей */
+    .form-control.is-invalid, .form-select.is-invalid {
+      border-color: #dc3545;
+      box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+    }
+
+    /* Кнопки навигации */
+    #prevCallBtn:disabled, #nextCallBtn:disabled {
+      opacity: 0.6;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body class="app">
+
+  <!-- Загрузчик -->
+  <div id="loader"><div class="spinner"></div></div>
+
+  <!-- Сайдбар -->
+  <div class="sidebar">
+    <div class="sidebar-inner">
+      {% include 'adminator/logo.html' %}
+      {% include 'adminator/menu.html' %}
+    </div>
+  </div>
+
+  <!-- Основной контент -->
+  <div class="page-container">
+    {% include 'adminator/topbar.html' %}
+
+    <main class="main-content bgc-grey-100">
+      <div id="mainContent">
+        <div class="row gap-20 masonry pos-r">
+          <div class="masonry-sizer col-md-6"></div>
+          <div class="masonry-item col-md-12">
+            <div class="bgc-white p-20 bd">
+              <!-- Заголовок с кнопками навигации -->
+              <div class="d-flex justify-content-between align-items-center mb-3">
+                <h4 class="c-grey-900 m-0">Редактирование звонка ID: <span id="callId"></span></h4>
+                <div>
+                  <button id="prevCallBtn" class="btn btn-outline-secondary me-2" disabled>
+                    <i class="fas fa-arrow-left"></i> Предыдущий
+                  </button>
+                  <button id="nextCallBtn" class="btn btn-outline-secondary" disabled>
+                    Следующий <i class="fas fa-arrow-right"></i>
+                  </button>
+                </div>
+              </div>
+
+              <div class="mT-30">
+                <form id="callForm" class="needs-validation" novalidate>
+
+                  <!-- Дата и время -->
+                  <div class="row">
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="callDate">Дата обращения</label>
+                      <input type="date" class="form-control" id="callDate" required>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="callTime">Время обращения</label>
+                      <input type="time" class="form-control" id="callTime" required>
+                    </div>
+                  </div>
+
+                  <!-- Справочники -->
+                  <div class="row">
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="duration">Продолжительность контакта</label>
+                      <select id="duration" class="form-control" data-url="/api/durations/" required>
+                        <option selected disabled value="">Загрузка...</option>
+                      </select>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="gender">Пол абонента</label>
+                      <select id="gender" class="form-control" data-url="/api/genders/" required>
+                        <option selected disabled value="">Загрузка...</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="ageGroup">Возрастная группа</label>
+                      <select id="ageGroup" class="form-control" data-url="/api/age-groups/" required>
+                        <option selected disabled value="">Загрузка...</option>
+                      </select>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="maritalStatus">Семейное положение</label>
+                      <select id="maritalStatus" class="form-control" data-url="/api/marital-statuses/">
+                        <option selected disabled value="">Загрузка...</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="socialStatus">Социальное положение</label>
+                      <select id="socialStatus" class="form-control" data-url="/api/social-statuses/" required>
+                        <option selected disabled value="">Загрузка...</option>
+                      </select>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="problem">Проблема</label>
+                      <select id="problem" class="form-control" data-url="/api/problems/" required>
+                        <option selected disabled value="">Загрузка...</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="emotionalState">Эмоциональное состояние</label>
+                      <select id="emotionalState" class="form-control" data-url="/api/emotional-states/" required>
+                        <option selected disabled value="">Загрузка...</option>
+                      </select>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="crisisSituation">Кризисность ситуации</label>
+                      <select id="crisisSituation" class="form-control" data-url="/api/crisis-situations/" required>
+                        <option selected disabled value="">Загрузка...</option>
+                      </select>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="problemDuration">Длительность существования проблемы</label>
+                      <select id="problemDuration" class="form-control" data-url="/api/problem-durations/" required>
+                        <option selected disabled value="">Загрузка...</option>
+                      </select>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="emotionDynamic">Динамика переживаний</label>
+                      <select id="emotionDynamic" class="form-control" data-url="/api/emotion-dynamics/" required>
+                        <option selected disabled value="">Загрузка...</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="row">
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="helpProvided">Предоставленная помощь</label>
+                      <select id="helpProvided" class="form-control" data-url="/api/help-provided/" required>
+                        <option selected disabled value="">Загрузка...</option>
+                      </select>
+                    </div>
+                    <div class="mb-3 col-md-6">
+                      <label class="form-label" for="frequency">Периодичность обращений</label>
+                      <select id="frequency" class="form-control" data-url="/api/frequencies/" required>
+                        <option selected disabled value="">Загрузка...</option>
+                      </select>
+                    </div>
+                  </div>
+
+                  <div class="d-flex justify-content-center mT-20">
+                    <button type="submit" class="btn btn-secondary btn-color" disabled>Сохранить</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!-- Footer -->
+    {% include 'adminator/bottombar.html' %}
+  </div>
+
+  <!-- Контейнер уведомлений -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Основной скрипт -->
+  <script>
+    // Функция глубокого сравнения двух объектов
+    function areObjectsEqual(obj1, obj2) {
+      const keys1 = Object.keys(obj1);
+      const keys2 = Object.keys(obj2);
+
+      if (keys1.length !== keys2.length) return false;
+
+      for (let key of keys1) {
+        if (obj1[key] !== obj2[key]) return false;
+      }
+
+      return true;
+    }
+
+    // Загрузка данных в select
+    async function loadOptions(selectId, url) {
+      const select = document.getElementById(selectId);
+      try {
+        const response = await fetch(url);
+        if (!response.ok) throw new Error(`Ошибка загрузки: ${url}`);
+
+        const data = await response.json();
+        const results = data.results || data; // Поддержка пагинации
+
+        // Очистить
+        select.innerHTML = '<option selected disabled value="">Выберите...</option>';
+
+        results.forEach(item => {
+          const option = document.createElement('option');
+          option.value = (item.code !== null && item.code !== undefined) ? item.code : '';
+          option.textContent = item.description || item.name || item;
+          select.appendChild(option);
+        });
+      } catch (error) {
+        console.error(error);
+        select.innerHTML = '<option disabled>Ошибка загрузки</option>';
+        showToast(`Ошибка загрузки: ${selectId}`, 'danger');
+      }
+    }
+
+    // Все поля и их API-эндпоинты
+    const fields = [
+      { id: 'duration', url: '/api/durations/' },
+      { id: 'gender', url: '/api/genders/' },
+      { id: 'ageGroup', url: '/api/age-groups/' },
+      { id: 'maritalStatus', url: '/api/marital-statuses/' },
+      { id: 'socialStatus', url: '/api/social-statuses/' },
+      { id: 'emotionalState', url: '/api/emotional-states/' },
+      { id: 'crisisSituation', url: '/api/crisis-situations/' },
+      { id: 'problem', url: '/api/problems/' },
+      { id: 'problemDuration', url: '/api/problem-durations/' },
+      { id: 'emotionDynamic', url: '/api/emotion-dynamics/' },
+      { id: 'helpProvided', url: '/api/help-provided/' },
+      { id: 'frequency', url: '/api/frequencies/' },
+    ];
+
+    // Универсальная функция уведомлений
+    function showToast(message, type = "success") {
+      const toast = document.createElement("div");
+      toast.className = `toast align-items-center text-white bg-${type === "danger" ? "error" : type} border-0 show mb-2 p-3 rounded shadow`;
+      toast.innerHTML = `
+        <div class="d-flex">
+          <div class="toast-body">
+            <i class="fas ${type === "success" ? "fa-check-circle" : "fa-exclamation-circle"}"></i>
+            ${message}
+          </div>
+        </div>
+      `;
+      const toastContainer = document.getElementById('toastContainer');
+      toastContainer.appendChild(toast);
+
+      // Автоудаление через 3 сек
+      setTimeout(() => {
+        toast.classList.add('hide');
+        setTimeout(() => toast.remove(), 300);
+      }, 3000);
+    }
+
+    // CSRF Token
+    function getCookie(name) {
+      let cookieValue = null;
+      if (document.cookie && document.cookie !== '') {
+        const cookies = document.cookie.split(';');
+        for (let i = 0; i < cookies.length; i++) {
+          const cookie = cookies[i].trim();
+          if (cookie.substring(0, name.length + 1) === (name + '=')) {
+            cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+            break;
+          }
+        }
+      }
+      return cookieValue;
+    }
+
+    // Извлечь ID из URL
+    const path = window.location.pathname;
+    const match = path.match(/\/calls\/(\d+)\/?$/);
+    if (!match) {
+      showToast("Ошибка: неверный адрес", "danger");
+      setTimeout(() => window.history.back(), 1500);
+    }
+    const callId = match[1];
+
+    const form = document.getElementById('callForm');
+
+    let initialData = null;
+
+    // Получить данные формы
+    function getFormData() {
+      return {
+        call_date: document.getElementById('callDate').value,
+        call_time: document.getElementById('callTime').value,
+        duration: parseInt(document.getElementById('duration').value),
+        gender: parseInt(document.getElementById('gender').value),
+        age_group: parseInt(document.getElementById('ageGroup').value),
+        marital_status: document.getElementById('maritalStatus').value ? parseInt(document.getElementById('maritalStatus').value) : null,
+        social_status: parseInt(document.getElementById('socialStatus').value),
+        problem: parseInt(document.getElementById('problem').value),
+        problem_duration: parseInt(document.getElementById('problemDuration').value),
+        emotional_state: parseInt(document.getElementById('emotionalState').value),
+        emotion_dynamic: parseInt(document.getElementById('emotionDynamic').value),
+        crisis_situation: parseInt(document.getElementById('crisisSituation').value),
+        help_provided: parseInt(document.getElementById('helpProvided').value),
+        frequency: parseInt(document.getElementById('frequency').value)
+      };
+    }
+
+    // Обновление состояния кнопки "Сохранить"
+    function updateSaveButtonState() {
+      const saveBtn = document.querySelector('button[type="submit"]');
+      if (!initialData) {
+        saveBtn.disabled = true;
+        return;
+      }
+
+      const currentData = getFormData();
+      const hasChanges = !areObjectsEqual(initialData, currentData);
+
+      saveBtn.disabled = !hasChanges;
+      saveBtn.classList.toggle('btn-success', hasChanges);
+      saveBtn.classList.toggle('btn-secondary', !hasChanges);
+    }
+
+    // Проверка существования звонка по ID
+    async function checkCallExists(callId) {
+      try {
+        const response = await fetch(`/api/calls/${callId}/`);
+        return response.ok;
+      } catch (error) {
+        return false;
+      }
+    }
+
+    // Обновление состояния кнопок навигации
+    async function updateNavButtons(currentId) {
+      const prevBtn = document.getElementById('prevCallBtn');
+      const nextBtn = document.getElementById('nextCallBtn');
+
+      const prevId = parseInt(currentId) - 1;
+      const nextId = parseInt(currentId) + 1;
+
+      // Проверяем предыдущий звонок
+      const prevExists = await checkCallExists(prevId);
+      prevBtn.disabled = !prevExists;
+      if (prevExists) {
+        prevBtn.onclick = () => navigateToCall(prevId);
+      } else {
+        prevBtn.onclick = null;
+      }
+
+      // Проверяем следующий звонок
+      const nextExists = await checkCallExists(nextId);
+      nextBtn.disabled = !nextExists;
+      if (nextExists) {
+        nextBtn.onclick = () => navigateToCall(nextId);
+      } else {
+        nextBtn.onclick = null;
+      }
+    }
+
+    // Переход к другому звонку
+    function navigateToCall(callId) {
+      const loader = document.getElementById('loader');
+      loader.classList.remove('fadeOut'); // Показываем загрузчик
+      window.location.href = `/calls/${callId}/`;
+    }
+
+    // Загрузка данных о звонке
+    async function loadCall() {
+      try {
+        const response = await fetch(`/api/calls/${callId}/`);
+        if (!response.ok) throw new Error(`HTTP ${response.status}`);
+
+        const data = await response.json();
+
+        // Заполнить форму
+        document.getElementById('callId').textContent = data.id;
+        document.getElementById('callDate').value = data.call_date || '';
+        document.getElementById('callTime').value = data.call_time || '';
+        document.getElementById('duration').value = data.duration?.code != null ? data.duration.code : '';
+        document.getElementById('gender').value = data.gender?.code != null ? data.gender.code : '';
+        document.getElementById('ageGroup').value = data.age_group?.code != null ? data.age_group.code : '';
+        document.getElementById('maritalStatus').value = data.marital_status?.code != null ? data.marital_status.code : '';
+        document.getElementById('socialStatus').value = data.social_status?.code != null ? data.social_status.code : '';
+        document.getElementById('problem').value = data.problem?.code != null ? data.problem.code : '';
+        document.getElementById('problemDuration').value = data.problem_duration?.code != null ? data.problem_duration.code : '';
+        document.getElementById('emotionalState').value = data.emotional_state?.code != null ? data.emotional_state.code : '';
+        document.getElementById('emotionDynamic').value = data.emotion_dynamic?.code != null ? data.emotion_dynamic.code : '';
+        document.getElementById('crisisSituation').value = data.crisis_situation?.code != null ? data.crisis_situation.code : '';
+        document.getElementById('helpProvided').value = data.help_provided?.code != null ? data.help_provided.code : '';
+        document.getElementById('frequency').value = data.frequency?.code != null ? data.frequency.code : '';
+
+        // Сохранить начальные значения
+        initialData = getFormData();
+
+        // Добавляем слушатели на все поля формы
+        const formFields = form.querySelectorAll('input, select');
+        formFields.forEach(field => {
+          field.addEventListener('input', updateSaveButtonState);
+          field.addEventListener('change', updateSaveButtonState); // для select
+        });
+
+        // Инициализируем состояние кнопки
+        updateSaveButtonState();
+
+        // Обновить кнопки навигации
+        await updateNavButtons(callId);
+
+        // Скрыть загрузчик
+        document.getElementById('loader').classList.add('fadeOut');
+
+      } catch (error) {
+        console.error("Ошибка загрузки:", error);
+        showToast("Не удалось загрузить данные звонка", "danger");
+        document.getElementById('loader').classList.add('fadeOut');
+      }
+    }
+
+    // Валидация формы перед отправкой
+    form.addEventListener('submit', async function(e) {
+      e.preventDefault();
+
+      if (!form.checkValidity()) {
+        form.classList.add('was-validated');
+        showToast("Заполните все обязательные поля.", "danger");
+        return;
+      }
+
+      const formData = getFormData();
+
+      try {
+        const response = await fetch(`/api/calls/${callId}/`, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+            'X-CSRFToken': getCookie('csrftoken')
+          },
+          body: JSON.stringify(formData)
+        });
+
+        if (response.ok) {
+          initialData = getFormData(); // Обновляем эталон
+          form.classList.remove('was-validated'); // Сбрасываем валидацию
+          showToast(`Звонок #${callId} успешно обновлён!`, 'success');
+          updateSaveButtonState(); // Обновляем кнопку — теперь изменений нет
+        } else {
+          const result = await response.json();
+          const errorMsg = Object.entries(result).map(([k, v]) => `${k}: ${v}`).join('; ');
+          showToast(`Ошибка: ${errorMsg}`, 'danger');
+        }
+      } catch (error) {
+        showToast(`Ошибка сети: ${error.message}`, 'danger');
+      }
+    });
+
+    // Загрузить все справочники и установить дату при старте
+    window.addEventListener('load', () => {
+      fields.forEach(field => {
+        loadOptions(field.id, field.url);
+      });
+
+      const today = new Date().toISOString().split('T')[0];
+      const dateInput = document.getElementById('callDate');
+      if (!dateInput.value) {
+        dateInput.value = today;
+      }
+
+      loadCall(); // Загружаем данные звонка
+    });
+
+  </script>
+
+</body>
+</html>

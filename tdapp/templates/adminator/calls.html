@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <title>История обращений</title>
+    <link href="https://cdn.datatables.net/1.10.20/css/jquery.dataTables.min.css" rel="stylesheet">
+    <style>
+      #loader {
+        transition: all 0.3s ease-in-out;
+        opacity: 1;
+        visibility: visible;
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        background: #fff;
+        z-index: 90000;
+      }
+
+      #loader.fadeOut {
+        opacity: 0;
+        visibility: hidden;
+      }
+
+      .spinner {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: calc(50% - 20px);
+        left: calc(50% - 20px);
+        background-color: #333;
+        border-radius: 100%;
+        -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+        animation: sk-scaleout 1.0s infinite ease-in-out;
+      }
+
+      @-webkit-keyframes sk-scaleout {
+        0% { -webkit-transform: scale(0) }
+        100% {
+          -webkit-transform: scale(1.0);
+          opacity: 0;
+        }
+      }
+
+      @keyframes sk-scaleout {
+        0% {
+          -webkit-transform: scale(0);
+          transform: scale(0);
+        } 100% {
+          -webkit-transform: scale(1.0);
+          transform: scale(1.0);
+          opacity: 0;
+        }
+      }
+    </style>
+    <script defer="defer" src="/static/adminator/main.js"></script>
+  </head>
+  <body class="app">
+    <div id="loader">
+      <div class="spinner"></div>
+    </div>
+
+    <script>
+      window.addEventListener('load', function load() {
+        const loader = document.getElementById('loader');
+        setTimeout(function() {
+          loader.classList.add('fadeOut');
+        }, 300);
+      });
+    </script>
+
+    <div>
+      <!-- #Left Sidebar ==================== -->
+      <div class="sidebar">
+        <div class="sidebar-inner">
+          {% include 'adminator/logo.html' %}
+          {% include 'adminator/menu.html' %}
+        </div>
+      </div>
+
+      <!-- #Main ============================ -->
+      <div class="page-container">
+        {% include 'adminator/topbar.html' %}
+
+        <main class="main-content bgc-grey-100">
+          <div id="mainContent">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="bgc-white bd bdrs-3 p-20 mB-20">
+                    <h4 class="c-grey-900 mB-20">История звонков</h4>
+
+                    <table id="dataTable" class="table table-striped table-bordered" cellspacing="0" width="100%">
+                      <thead>
+
+                      </thead>
+<!--                      <tbody>-->
+<!--                        {% for call in calls %}-->
+<!--                        <tr>-->
+<!--                          <td>{{ call.id }}</td>-->
+<!--                          <td>{{ call.call_date }}</td>-->
+<!--                          <td>{{ call.call_time }}</td>-->
+<!--                          <td>{{ call.duration.description }}</td>-->
+<!--                          <td>{{ call.gender.description }}</td>-->
+<!--                          <td>{{ call.age_group.description }}</td>-->
+<!--                          <td>{{ call.marital_status.description }}</td>-->
+<!--                          <td>{{ call.social_status.description }}</td>-->
+<!--                          <td>{{ call.problem.description }}</td>-->
+<!--                          <td>{{ call.problem_duration.description }}</td>-->
+<!--                          <td>{{ call.emotional_state.description }}</td>-->
+<!--                          <td>{{ call.crisis_situation.description }}</td>-->
+<!--                          <td>{{ call.help_provided.description }}</td>-->
+<!--                          <td>{{ call.frequency.description }}</td>-->
+<!--                          <td>{{ call.consultant.get_full_name }}</td>-->
+<!--                        </tr>-->
+<!--                        {% endfor %}-->
+<!--                      </tbody>-->
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+
+        {% include 'adminator/bottombar.html' %}
+      </div>
+    </div>
+
+    <!-- Подключаем jQuery и DataTables -->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+
+    <script>
+      $(document).ready(function() {
+        $('#dataTable').DataTable({
+            "processing": true,
+            "serverSide": true,
+            "scrollX": true,
+            "ajax": {
+                "url": "/api/calls/",  // ← твой эндпоинт
+                "dataSrc": function(json) {
+                    json.recordsTotal = json.recordsTotal;
+                    json.recordsFiltered = json.count;
+                    return json.results;
+                }
+            },
+            "columns": [
+                { "data": "id", "title": "ID" },
+                { "data": "call_date", "title": "Дата" },
+                { "data": "call_time", "title": "Время" },
+                {
+                    "data": "duration",
+                    "title": "Продолжительность",
+                    "render": function(data, type, row) {
+                        return data ? data.description : "—";
+                    }
+                },
+                {
+                    "data": "gender",
+                    "title": "Пол",
+                    "render": function(data, type, row) {
+                        return data ? data.description : "—";
+                    }
+                },
+                {
+                    "data": "age_group",
+                    "title": "Возраст",
+                    "render": function(data, type, row) {
+                        return data ? data.description : "—";
+                    }
+                },
+                {
+                    "data": "marital_status",
+                    "title": "Семейное положение",
+                    "render": function(data, type, row) {
+                        return data ? data.description : "—";
+                    }
+                },
+                {
+                    "data": "social_status",
+                    "title": "Социальное положение",
+                    "render": function(data, type, row) {
+                        return data ? data.description : "—";
+                    }
+                },
+                {
+                    "data": "problem",
+                    "title": "Проблема",
+                    "render": function(data, type, row) {
+                        return data ? data.description : "—";
+                    }
+                },
+                {
+                    "data": "problem_duration",
+                    "title": "Длительность проблемы",
+                    "render": function(data, type, row) {
+                        return data ? data.description : "—";
+                    }
+                },
+                {
+                    "data": "emotional_state",
+                    "title": "Эмоциональное состояние",
+                    "render": function(data, type, row) {
+                        return data ? data.description : "—";
+                    }
+                },
+                {
+                    "data": "crisis_situation",
+                    "title": "Кризисность ситуации",
+                    "render": function(data, type, row) {
+                        return data ? data.description : "—";
+                    }
+                },
+                {
+                    "data": "help_provided",
+                    "title": "Помощь",
+                    "render": function(data, type, row) {
+                        return data ? data.description : "—";
+                    }
+                },
+                {
+                    "data": "frequency",
+                    "title": "Периодичность обращений",
+                    "render": function(data, type, row) {
+                        return data ? data.description : "—";
+                    }
+                },
+                {
+                    "data": "consultant",
+                    "title": "Консультант",
+                    "render": function(data, type, row) {
+                        return data ? data.full_name || (data.first_name + ' ' + data.last_name) || data.username || "—" : "—";
+                    }
+                }
+            ],
+            "language": {
+                "processing": "Загрузка...",
+                "search": "Поиск:",
+                "lengthMenu": "Показать _MENU_ записей на странице",
+                "info": "Показано с _START_ до _END_ из _TOTAL_ записей",
+                "infoEmpty": "Показано 0 записей",
+                "infoFiltered": "(отфильтровано из _MAX_ записей)",
+                "loadingRecords": "Загрузка записей...",
+                "zeroRecords": "Ничего не найдено",
+                "emptyTable": "В таблице нет данных",
+                "paginate": {
+                    "first": "Первая",
+                    "previous": "Назад",
+                    "next": "Вперёд",
+                    "last": "Последняя"
+                },
+                "aria": {
+                    "sortAscending": ": активировать для сортировки по возрастанию",
+                    "sortDescending": ": активировать для сортировки по убыванию"
+                },
+                "select": {
+                    "rows": {
+                        "_": "Выбрано %d строк",
+                        "0": "Кликните по строке для выбора",
+                        "1": "Выбрана 1 строка"
+                    }
+                }
+            },
+            "pageLength": 10,
+            "lengthMenu": [10, 25, 50, 100],
+            "order": [[0, "desc"]],
+        });
+    });
+    </script>
+    <script>
+      $(document).ready(function() {
+
+        // Переход по клику на строку
+        $('#dataTable tbody').on('click', 'tr', function() {
+          var id = $(this).find("td:first").text().trim(); // берём ID из первой колонки
+          if (id) {
+            window.location.href = "/calls/" + id; // переход на страницу звонка
+          }
+        });
+
+        // Меняем курсор на pointer при наведении
+        $('#dataTable tbody').on('mouseenter', 'tr', function() {
+          $(this).css('cursor', 'pointer');
+        });
+      });
+    </script>
+  </body>
+</html>

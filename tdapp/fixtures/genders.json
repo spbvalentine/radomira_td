@@ -1,0 +1,23 @@
+[
+  {
+    "model": "tdapp.gender",
+    "pk": 0,
+    "fields": {
+      "description": "Пол не установлен"
+    }
+  },
+  {
+    "model": "tdapp.gender",
+    "pk": 1,
+    "fields": {
+      "description": "Мужской"
+    }
+  },
+  {
+    "model": "tdapp.gender",
+    "pk": 2,
+    "fields": {
+      "description": "Женский"
+    }
+  }
+]

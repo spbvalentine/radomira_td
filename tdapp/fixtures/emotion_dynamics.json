@@ -1,0 +1,44 @@
+[
+  {
+    "model": "tdapp.emotiondynamic",
+    "pk": 0,
+    "fields": {
+      "description": "Не определена"
+    }
+  },
+  {
+    "model": "tdapp.emotiondynamic",
+    "pk": 1,
+    "fields": {
+      "description": "Стабильное состояние"
+    }
+  },
+  {
+    "model": "tdapp.emotiondynamic",
+    "pk": 2,
+    "fields": {
+      "description": "Нарастание актуальности"
+    }
+  },
+  {
+    "model": "tdapp.emotiondynamic",
+    "pk": 3,
+    "fields": {
+      "description": "Периодическое обострение"
+    }
+  },
+  {
+    "model": "tdapp.emotiondynamic",
+    "pk": 4,
+    "fields": {
+      "description": "Внезапное обострение"
+    }
+  },
+  {
+    "model": "tdapp.emotiondynamic",
+    "pk": 5,
+    "fields": {
+      "description": "Снижение актуальности"
+    }
+  }
+]

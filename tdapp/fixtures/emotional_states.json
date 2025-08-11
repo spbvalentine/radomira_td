@@ -1,0 +1,93 @@
+[
+  {
+    "model": "tdapp.emotionalstate",
+    "pk": 0,
+    "fields": {
+      "description": "Не определено"
+    }
+  },
+  {
+    "model": "tdapp.emotionalstate",
+    "pk": 1,
+    "fields": {
+      "description": "Спокойствие"
+    }
+  },
+  {
+    "model": "tdapp.emotionalstate",
+    "pk": 2,
+    "fields": {
+      "description": "Радость"
+    }
+  },
+  {
+    "model": "tdapp.emotionalstate",
+    "pk": 3,
+    "fields": {
+      "description": "Горе, печаль"
+    }
+  },
+  {
+    "model": "tdapp.emotionalstate",
+    "pk": 4,
+    "fields": {
+      "description": "Страх, тревога"
+    }
+  },
+  {
+    "model": "tdapp.emotionalstate",
+    "pk": 5,
+    "fields": {
+      "description": "Отчаяние"
+    }
+  },
+  {
+    "model": "tdapp.emotionalstate",
+    "pk": 6,
+    "fields": {
+      "description": "Шок"
+    }
+  },
+  {
+    "model": "tdapp.emotionalstate",
+    "pk": 7,
+    "fields": {
+      "description": "Вина"
+    }
+  },
+  {
+    "model": "tdapp.emotionalstate",
+    "pk": 8,
+    "fields": {
+      "description": "Обида"
+    }
+  },
+  {
+    "model": "tdapp.emotionalstate",
+    "pk": 9,
+    "fields": {
+      "description": "Агрессивность"
+    }
+  },
+  {
+    "model": "tdapp.emotionalstate",
+    "pk": 10,
+    "fields": {
+      "description": "Аффективное состояние"
+    }
+  },
+  {
+    "model": "tdapp.emotionalstate",
+    "pk": 11,
+    "fields": {
+      "description": "Измененное состояние (алкогольное или наркотическое опьянение)"
+    }
+  },
+  {
+    "model": "tdapp.emotionalstate",
+    "pk": 12,
+    "fields": {
+      "description": "Апатия, скука"
+    }
+  }
+]
