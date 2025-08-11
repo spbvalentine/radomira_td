@@ -1,0 +1,37 @@
+[
+  {
+    "model": "tdapp.problemduration",
+    "pk": 0,
+    "fields": {
+      "description": "Не определена"
+    }
+  },
+  {
+    "model": "tdapp.problemduration",
+    "pk": 1,
+    "fields": {
+      "description": "до недели"
+    }
+  },
+  {
+    "model": "tdapp.problemduration",
+    "pk": 2,
+    "fields": {
+      "description": "до 3-х месяцев"
+    }
+  },
+  {
+    "model": "tdapp.problemduration",
+    "pk": 3,
+    "fields": {
+      "description": "до 1 года"
+    }
+  },
+  {
+    "model": "tdapp.problemduration",
+    "pk": 4,
+    "fields": {
+      "description": "свыше 1 года"
+    }
+  }
+]

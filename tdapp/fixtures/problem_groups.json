@@ -1,0 +1,100 @@
+[
+  {
+    "model": "tdapp.problemgroup",
+    "pk": 10,
+    "fields": {
+      "name": "Кризис"
+    }
+  },
+  {
+    "model": "tdapp.problemgroup",
+    "pk": 11,
+    "fields": {
+      "name": "Суицид"
+    }
+  },
+  {
+    "model": "tdapp.problemgroup",
+    "pk": 12,
+    "fields": {
+      "name": "Семейные и супружеские взаимоотношения"
+    }
+  },
+  {
+    "model": "tdapp.problemgroup",
+    "pk": 13,
+    "fields": {
+      "name": "Взаимоотношения детей и родителей"
+    }
+  },
+  {
+    "model": "tdapp.problemgroup",
+    "pk": 14,
+    "fields": {
+      "name": "Проблемы принятия себя. Экзистенциальные переживания"
+    }
+  },
+  {
+    "model": "tdapp.problemgroup",
+    "pk": 15,
+    "fields": {
+      "name": "Общение и взаимоотношения"
+    }
+  },
+  {
+    "model": "tdapp.problemgroup",
+    "pk": 16,
+    "fields": {
+      "name": "Любовные отношения"
+    }
+  },
+  {
+    "model": "tdapp.problemgroup",
+    "pk": 17,
+    "fields": {
+      "name": "Сексуальные отношения"
+    }
+  },
+  {
+    "model": "tdapp.problemgroup",
+    "pk": 18,
+    "fields": {
+      "name": "Зависимости"
+    }
+  },
+  {
+    "model": "tdapp.problemgroup",
+    "pk": 19,
+    "fields": {
+      "name": "Здоровье"
+    }
+  },
+  {
+    "model": "tdapp.problemgroup",
+    "pk": 20,
+    "fields": {
+      "name": "Насилие"
+    }
+  },
+  {
+    "model": "tdapp.problemgroup",
+    "pk": 21,
+    "fields": {
+      "name": "Социальная адаптация и дезадаптация"
+    }
+  },
+  {
+    "model": "tdapp.problemgroup",
+    "pk": 22,
+    "fields": {
+      "name": "Учебные и профессиональные проблемы"
+    }
+  },
+  {
+    "model": "tdapp.problemgroup",
+    "pk": 23,
+    "fields": {
+      "name": "Другие обращения"
+    }
+  }
+]

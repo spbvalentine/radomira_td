@@ -1,0 +1,65 @@
+[
+  {
+    "model": "tdapp.agegroup",
+    "pk": 1,
+    "fields": {
+      "description": "Дошкольник (до 7 лет)"
+    }
+  },
+  {
+    "model": "tdapp.agegroup",
+    "pk": 2,
+    "fields": {
+      "description": "Младший школьник (7...10 лет)"
+    }
+  },
+  {
+    "model": "tdapp.agegroup",
+    "pk": 3,
+    "fields": {
+      "description": "Младший подросток (11…14 лет)"
+    }
+  },
+  {
+    "model": "tdapp.agegroup",
+    "pk": 4,
+    "fields": {
+      "description": "Старший подросток (15…18 лет)"
+    }
+  },
+  {
+    "model": "tdapp.agegroup",
+    "pk": 5,
+    "fields": {
+      "description": "Молодежь (19…25 лет)"
+    }
+  },
+  {
+    "model": "tdapp.agegroup",
+    "pk": 6,
+    "fields": {
+      "description": "Люди среднего возраста (26…35 лет)"
+    }
+  },
+  {
+    "model": "tdapp.agegroup",
+    "pk": 7,
+    "fields": {
+      "description": "Люди зрелого возраста (36…50 лет)"
+    }
+  },
+  {
+    "model": "tdapp.agegroup",
+    "pk": 8,
+    "fields": {
+      "description": "Люди старшего возраста (51…60 лет)"
+    }
+  },
+  {
+    "model": "tdapp.agegroup",
+    "pk": 9,
+    "fields": {
+      "description": "Пожилые люди (старше 60 лет)"
+    }
+  }
+]

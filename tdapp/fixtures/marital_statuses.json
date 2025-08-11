@@ -1,0 +1,44 @@
+[
+  {
+    "model": "tdapp.maritalstatus",
+    "pk": 0,
+    "fields": {
+      "description": "Не установлено"
+    }
+  },
+  {
+    "model": "tdapp.maritalstatus",
+    "pk": 1,
+    "fields": {
+      "description": "Холост"
+    }
+  },
+  {
+    "model": "tdapp.maritalstatus",
+    "pk": 2,
+    "fields": {
+      "description": "Брак"
+    }
+  },
+  {
+    "model": "tdapp.maritalstatus",
+    "pk": 3,
+    "fields": {
+      "description": "Развод"
+    }
+  },
+  {
+    "model": "tdapp.maritalstatus",
+    "pk": 4,
+    "fields": {
+      "description": "Вдовство"
+    }
+  },
+  {
+    "model": "tdapp.maritalstatus",
+    "pk": 5,
+    "fields": {
+      "description": "Мать-одиночка"
+    }
+  }
+]

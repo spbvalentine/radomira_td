@@ -1,0 +1,30 @@
+[
+  {
+    "model": "tdapp.callfrequency",
+    "pk": 0,
+    "fields": {
+      "description": "Не определено"
+    }
+  },
+  {
+    "model": "tdapp.callfrequency",
+    "pk": 1,
+    "fields": {
+      "description": "Первичное"
+    }
+  },
+  {
+    "model": "tdapp.callfrequency",
+    "pk": 2,
+    "fields": {
+      "description": "Повторное"
+    }
+  },
+  {
+    "model": "tdapp.callfrequency",
+    "pk": 3,
+    "fields": {
+      "description": "Регулярное"
+    }
+  }
+]

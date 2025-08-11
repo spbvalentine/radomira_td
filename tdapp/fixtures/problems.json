@@ -1,0 +1,970 @@
+[
+  {
+    "model": "tdapp.problem",
+    "pk": 1001,
+    "fields": {
+      "group": 10,
+      "description": "Депривационный (развод, смерть, другие потери)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1002,
+    "fields": {
+      "group": 10,
+      "description": "Ситуационный (болезнь, травма, авария, катастрофа,…)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1003,
+    "fields": {
+      "group": 10,
+      "description": "Текущие жизненные изменения (беременность, новая работа, перемена места жительства, другие изменения в жизни)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1004,
+    "fields": {
+      "group": 10,
+      "description": "Интеграционный (позитивные измерения, вызывающие стресс: вступление в брак, новые знакомства, повышения по службе, …)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1005,
+    "fields": {
+      "group": 10,
+      "description": "Другие кризисные переживания"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1101,
+    "fields": {
+      "group": 11,
+      "description": "Суицидальные идеи, мысли, переживания"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1102,
+    "fields": {
+      "group": 11,
+      "description": "Суицидальный план, подготовка к суициду (завещание, раздача вещей, прощание, упорядочивание жизни)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1103,
+    "fields": {
+      "group": 11,
+      "description": "Суицидальные действия"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1104,
+    "fields": {
+      "group": 11,
+      "description": "Предшествующие попытки"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1105,
+    "fields": {
+      "group": 11,
+      "description": "Суицид близкого"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1106,
+    "fields": {
+      "group": 11,
+      "description": "Пост-суицид"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1107,
+    "fields": {
+      "group": 11,
+      "description": "Другие суицидальные обращения"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1201,
+    "fields": {
+      "group": 12,
+      "description": "Семейный конфликт"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1202,
+    "fields": {
+      "group": 12,
+      "description": "Конфликты между детьми"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1203,
+    "fields": {
+      "group": 12,
+      "description": "Конфликт супругов"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1204,
+    "fields": {
+      "group": 12,
+      "description": "Развод. Предстоящий развод."
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1205,
+    "fields": {
+      "group": 12,
+      "description": "Супружеская измена"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1206,
+    "fields": {
+      "group": 12,
+      "description": "Семейный кризис (изменение в жизни семьи: рождение ребенка, разлука, связанная с отъездом, переезд,…)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1207,
+    "fields": {
+      "group": 12,
+      "description": "Другие семейные и супружеские проблемы"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1301,
+    "fields": {
+      "group": 13,
+      "description": "Конфликт с родителями"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1302,
+    "fields": {
+      "group": 13,
+      "description": "Конфликт с ребенком"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1303,
+    "fields": {
+      "group": 13,
+      "description": "Угроза развода или развод родителей"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1304,
+    "fields": {
+      "group": 13,
+      "description": "Проблемы воспитания, развития ребенка"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1305,
+    "fields": {
+      "group": 13,
+      "description": "Взрослые дети, отношения с повзрослевшими детьми. \"Пустое гнездо\"."
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1306,
+    "fields": {
+      "group": 13,
+      "description": "Неродные дети. Неродные родители"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1307,
+    "fields": {
+      "group": 13,
+      "description": "Брошеные дети. Изоляция ребенка (детдом, приют, интернат, тюрьма, …)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1308,
+    "fields": {
+      "group": 13,
+      "description": "Смерть одного или обоих родителей. Сиротство"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1309,
+    "fields": {
+      "group": 13,
+      "description": "Другие проблемы детско-родительских отношений"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1401,
+    "fields": {
+      "group": 14,
+      "description": "Внешняя (физическая) непривлекательность"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1402,
+    "fields": {
+      "group": 14,
+      "description": "Несоответствие ожиданиям окружения (семьи, друзей, коллег, др.)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1403,
+    "fields": {
+      "group": 14,
+      "description": "Трудности личностного роста, взросления"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1404,
+    "fields": {
+      "group": 14,
+      "description": "Непринятие (отвержение) себя как личности"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1405,
+    "fields": {
+      "group": 14,
+      "description": "Одиночество."
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1406,
+    "fields": {
+      "group": 14,
+      "description": "Поиск, отсутствие или утрата смысла жизни"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1407,
+    "fields": {
+      "group": 14,
+      "description": "Религиозные, духовные проблемы, вопросы веры."
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1408,
+    "fields": {
+      "group": 14,
+      "description": "Другие экзистенциальные переживания"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1409,
+    "fields": {
+      "group": 14,
+      "description": "Другие проблемы принятия себя"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1501,
+    "fields": {
+      "group": 15,
+      "description": "Установление дружеских отношений"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1502,
+    "fields": {
+      "group": 15,
+      "description": "Трудности во взаимоотношениях, непонимание, замешательство в отношениях"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1503,
+    "fields": {
+      "group": 15,
+      "description": "Трудности адаптации к новому коллективу"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1504,
+    "fields": {
+      "group": 15,
+      "description": "Конфликты (кроме производственных), ссоры"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1505,
+    "fields": {
+      "group": 15,
+      "description": "Давление со стороны референтной группы или друга"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1506,
+    "fields": {
+      "group": 15,
+      "description": "Другие проблемы общения"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1601,
+    "fields": {
+      "group": 16,
+      "description": "Трудности при знакомстве"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1602,
+    "fields": {
+      "group": 16,
+      "description": "Затруднения при выборе партнера"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1603,
+    "fields": {
+      "group": 16,
+      "description": "Трудности сближения. Затруднения при проявлении любовных чувств."
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1604,
+    "fields": {
+      "group": 16,
+      "description": "Неразделенная любовь"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1605,
+    "fields": {
+      "group": 16,
+      "description": "Ревность"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1606,
+    "fields": {
+      "group": 16,
+      "description": "Измена"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1607,
+    "fields": {
+      "group": 16,
+      "description": "Охлаждение чувств, разрыв отношений. Трудности расставания"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1608,
+    "fields": {
+      "group": 16,
+      "description": "Другие проблемы любовных отношений"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1701,
+    "fields": {
+      "group": 17,
+      "description": "Половая идентичность"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1702,
+    "fields": {
+      "group": 17,
+      "description": "Первый сексуальный опыт"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1703,
+    "fields": {
+      "group": 17,
+      "description": "Мастурбация"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1704,
+    "fields": {
+      "group": 17,
+      "description": "Сексуальные дисгармонии (импотенция, фригидность, …)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1705,
+    "fields": {
+      "group": 17,
+      "description": "Гомосексуализм"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1706,
+    "fields": {
+      "group": 17,
+      "description": "Особенности сексуального поведения (подглядывание, демонстрация, фетишизм, проч.)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1707,
+    "fields": {
+      "group": 17,
+      "description": "Вопросы контрацепции"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1708,
+    "fields": {
+      "group": 17,
+      "description": "Нежелательная беременность"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1709,
+    "fields": {
+      "group": 17,
+      "description": "Инцест"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1710,
+    "fields": {
+      "group": 17,
+      "description": "Использование консультанта в качестве сексуального объекта"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1711,
+    "fields": {
+      "group": 17,
+      "description": "Другие проблемы сексуальных отношений"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1801,
+    "fields": {
+      "group": 18,
+      "description": "Аддиктивное поведение"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1802,
+    "fields": {
+      "group": 18,
+      "description": "Никотиновая зависимость"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1803,
+    "fields": {
+      "group": 18,
+      "description": "Наркотическая зависимость"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1804,
+    "fields": {
+      "group": 18,
+      "description": "Алкогольная зависимость"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1805,
+    "fields": {
+      "group": 18,
+      "description": "Интернет-зависимость"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1806,
+    "fields": {
+      "group": 18,
+      "description": "Игровая зависимость (включая компьютерные игры), азартность."
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1807,
+    "fields": {
+      "group": 18,
+      "description": "Со-зависимость"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1808,
+    "fields": {
+      "group": 18,
+      "description": "Другие проблемы, связанные с зависимостями"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1901,
+    "fields": {
+      "group": 19,
+      "description": "Переживание текущего психотравмирующего события/ процесса"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1902,
+    "fields": {
+      "group": 19,
+      "description": "Психическое здоровье и его нарушения, депрессия, \"нервный срыв\"."
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1903,
+    "fields": {
+      "group": 19,
+      "description": "Соматическое здоровье и его нарушения, осложнения."
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1904,
+    "fields": {
+      "group": 19,
+      "description": "Вензаболевания"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1905,
+    "fields": {
+      "group": 19,
+      "description": "ВИЧ-инфекция, СПИД."
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1906,
+    "fields": {
+      "group": 19,
+      "description": "Онкологические заболевания"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1907,
+    "fields": {
+      "group": 19,
+      "description": "Инвалидность"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1908,
+    "fields": {
+      "group": 19,
+      "description": "Посттравматический синдром (в т.ч. \"афганский\", \"чеченский\", \"карабахский\" синдром)."
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1909,
+    "fields": {
+      "group": 19,
+      "description": "Беременность"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1910,
+    "fields": {
+      "group": 19,
+      "description": "Аборт"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 1911,
+    "fields": {
+      "group": 19,
+      "description": "Другие обращения, связанные со здоровьем"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2001,
+    "fields": {
+      "group": 20,
+      "description": "Эмоциональное давление (угрозы, шантаж, издевательство, унижение)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2002,
+    "fields": {
+      "group": 20,
+      "description": "Домашнее насилие, неприемлемый уклад семейной жизни"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2003,
+    "fields": {
+      "group": 20,
+      "description": "Психологическое насилие над личностью (вкл. действие сект, других неформальных объединений)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2004,
+    "fields": {
+      "group": 20,
+      "description": "Физическое насилие, жестокое обращение в семье"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2005,
+    "fields": {
+      "group": 20,
+      "description": "Экономическое насилие"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2006,
+    "fields": {
+      "group": 20,
+      "description": "Сексуальные домогательства, приставания"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2007,
+    "fields": {
+      "group": 20,
+      "description": "Манипулятивное склонение к близости («если ты меня любишь, то…»)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2008,
+    "fields": {
+      "group": 20,
+      "description": "Изнасилование; развратные действия"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2009,
+    "fields": {
+      "group": 20,
+      "description": "Мысли об убийстве. План убийства, подготовка."
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2010,
+    "fields": {
+      "group": 20,
+      "description": "Пост-убийство"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2011,
+    "fields": {
+      "group": 20,
+      "description": "Другие проблемы, связанные с проявлением насилия"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2101,
+    "fields": {
+      "group": 21,
+      "description": "Нарушение социальных норм (бродяжничество, воровство, …)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2102,
+    "fields": {
+      "group": 21,
+      "description": "Нарушение закона (в т.ч. судебный приговор, вызов в прокуратуру, ОВД, ФСБ и т.д.)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2103,
+    "fields": {
+      "group": 21,
+      "description": "Вынужденная изоляция (тюрьма, интернат, другие спец. учреждения) и адаптация после нее"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2104,
+    "fields": {
+      "group": 21,
+      "description": "Призыв и служба в армии"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2105,
+    "fields": {
+      "group": 21,
+      "description": "Социальная напряженность"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2106,
+    "fields": {
+      "group": 21,
+      "description": "Национальные и межнациональные проблемы"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2107,
+    "fields": {
+      "group": 21,
+      "description": "Миграция"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2108,
+    "fields": {
+      "group": 21,
+      "description": "Материальные трудности, плохие жилищные условия"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2109,
+    "fields": {
+      "group": 21,
+      "description": "Другие проблемы социальной адаптации"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2201,
+    "fields": {
+      "group": 22,
+      "description": "Затруднения в выборе профессии"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2202,
+    "fields": {
+      "group": 22,
+      "description": "Трудности профессионального роста"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2203,
+    "fields": {
+      "group": 22,
+      "description": "Трудоустройство, потеря работы, безработица"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2204,
+    "fields": {
+      "group": 22,
+      "description": "Неудовлетворенность учебой, работой"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2205,
+    "fields": {
+      "group": 22,
+      "description": "Конфликт с учителем"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2206,
+    "fields": {
+      "group": 22,
+      "description": "Производственный конфликт"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2207,
+    "fields": {
+      "group": 22,
+      "description": "Нежелание учиться, трудиться"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2208,
+    "fields": {
+      "group": 22,
+      "description": "Другие учебные и профессиональные проблемы"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2301,
+    "fields": {
+      "group": 23,
+      "description": "Обращения по поводу другого человека"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2302,
+    "fields": {
+      "group": 23,
+      "description": "Запрос информации"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2303,
+    "fields": {
+      "group": 23,
+      "description": "Информация о ТД"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2304,
+    "fields": {
+      "group": 23,
+      "description": "Информация о службах психологической помощи"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2305,
+    "fields": {
+      "group": 23,
+      "description": "Просто поговорить (обращение, связанное с недостатком общения)"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2306,
+    "fields": {
+      "group": 23,
+      "description": "Благодарность"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2307,
+    "fields": {
+      "group": 23,
+      "description": "Зависающий абонент"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2308,
+    "fields": {
+      "group": 23,
+      "description": "Патологический абонент"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2309,
+    "fields": {
+      "group": 23,
+      "description": "Молчание и \"контроль\""
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2310,
+    "fields": {
+      "group": 23,
+      "description": "Розыгрыш"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2311,
+    "fields": {
+      "group": 23,
+      "description": "Брань и угрозы в адрес консультанта"
+    }
+  },
+  {
+    "model": "tdapp.problem",
+    "pk": 2312,
+    "fields": {
+      "group": 23,
+      "description": "Неклассифицируемое обращение"
+    }
+  }
+]
