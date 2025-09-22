@@ -3,71 +3,109 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-    <title>Forms</title>
+    <title>Регистрация обращений</title>
     <script defer="defer" src="/static/adminator/main.js"></script>
     <!-- Font Awesome для иконок -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Стили прелоадера (как на странице Charts) -->
+    <style>
+        #loader {
+            transition: all 0.3s ease-in-out;
+            opacity: 1;
+            visibility: visible;
+            position: fixed;
+            height: 100vh;
+            width: 100%;
+            background: #fff;
+            z-index: 90000;
+        }
+
+        #loader.fadeOut {
+            opacity: 0;
+            visibility: hidden;
+        }
+
+        .spinner {
+            width: 40px;
+            height: 40px;
+            position: absolute;
+            top: calc(50% - 20px);
+            left: calc(50% - 20px);
+            background-color: #333;
+            border-radius: 100%;
+            -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+            animation: sk-scaleout 1.0s infinite ease-in-out;
+        }
+
+        @-webkit-keyframes sk-scaleout {
+            0% { -webkit-transform: scale(0) }
+            100% {
+                -webkit-transform: scale(1.0);
+                opacity: 0;
+            }
+        }
+
+        @keyframes sk-scaleout {
+            0% {
+                -webkit-transform: scale(0);
+                transform: scale(0);
+            } 100% {
+                  -webkit-transform: scale(1.0);
+                  transform: scale(1.0);
+                  opacity: 0;
+              }
+        }
+
+        /* Ваши остальные стили */
+        /* Контейнер для уведомлений */
+        .toast-container {
+          position: fixed;
+          bottom: 20px;
+          right: 20px;
+          z-index: 9999;
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+        }
+        .toast {
+          padding: 12px 16px;
+          border-radius: 8px;
+          font-size: 14px;
+          color: white;
+          box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+          opacity: 0;
+          transform: translateY(20px);
+          animation: slideIn 0.3s forwards;
+          display: flex;
+          align-items: center;
+          gap: 10px;
+          cursor: pointer;
+        }
+        @keyframes slideIn { to { opacity: 1; transform: translateY(0); } }
+        @keyframes fadeOut { to { opacity: 0; transform: translateY(20px); height: 0; margin: 0; padding: 0; overflow: hidden; } }
+        .toast.hide { animation: fadeOut 0.3s forwards; }
+
+        .toast.success { background: #28a745; }
+        .toast.error   { background: #dc3545; }
+        .toast.warn    { background: #ffc107; color: #000; }
+
+        /* Ошибки полей */
+        .form-control.is-invalid, .form-select.is-invalid {
+          border-color: #dc3545;
+          box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
+        }
+
+        /* Кнопки навигации */
+        #prevCallBtn:disabled, #nextCallBtn:disabled {
+          opacity: 0.6;
+          cursor: not-allowed;
+        }
+    </style>
   </head>
   <body class="app">
-    <style>
-    /* Контейнер для уведомлений */
-    .toast-container {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      z-index: 9999;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-    }
-    .toast {
-      padding: 12px 16px;
-      border-radius: 8px;
-      font-size: 14px;
-      color: white;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
-      opacity: 0;
-      transform: translateY(20px);
-      animation: slideIn 0.3s forwards;
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      cursor: pointer;
-    }
-    @keyframes slideIn { to { opacity: 1; transform: translateY(0); } }
-    @keyframes fadeOut { to { opacity: 0; transform: translateY(20px); height: 0; margin: 0; padding: 0; overflow: hidden; } }
-    .toast.hide { animation: fadeOut 0.3s forwards; }
 
-    .toast.success { background: #28a745; }
-    .toast.error   { background: #dc3545; }
-    .toast.warn    { background: #ffc107; color: #000; }
-
-    /* Загрузчик */
-    #loader {
-      position: fixed; top: 0; left: 0; width: 100%; height: 100%;
-      background: rgba(255,255,255,0.9); display: flex; justify-content: center; align-items: center;
-      z-index: 9999; transition: opacity 0.5s ease;
-    }
-    #loader.fadeOut { opacity: 0; pointer-events: none; }
-    .spinner {
-      width: 40px; height: 40px; border: 4px solid #f3f3f3;
-      border-top: 4px solid #3498db; border-radius: 50%; animation: spin 1s linear infinite;
-    }
-    @keyframes spin { 0% { transform: rotate(0deg); } 100% { transform: rotate(360deg); } }
-
-    /* Ошибки полей */
-    .form-control.is-invalid, .form-select.is-invalid {
-      border-color: #dc3545;
-      box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25);
-    }
-
-    /* Кнопки навигации */
-    #prevCallBtn:disabled, #nextCallBtn:disabled {
-      opacity: 0.6;
-      cursor: not-allowed;
-    }
-  </style>
-
+    <!-- Прелоадер как на странице Charts -->
     <div id="loader">
       <div class="spinner"></div>
     </div>

@@ -6,6 +6,11 @@ from tdapp import models
 from . import serializers
 from .pagination import DataTablesPagination
 
+from rest_framework.decorators import api_view
+from rest_framework.response import Response
+from django.utils import timezone
+from tdapp.models import CallRecord
+
 # Фильтры
 class CallRecordFilter(django_filters.FilterSet):
     call_date = django_filters.DateFromToRangeFilter()  # ?call_date_after=2025-01-01&call_date_before=2025-04-01
@@ -81,3 +86,19 @@ class CallRecordViewSet(viewsets.ModelViewSet):
     ordering_fields = ['call_date', 'call_time', 'id']  # ← Добавили 'id' для возможности переопределения через API
 
     pagination_class = DataTablesPagination
+
+@api_view(['GET'])
+def stats_summary(request):
+    """
+    Возвращает сводную статистику по обращениям.
+    """
+    # Общее количество звонков
+    total_calls = CallRecord.objects.count()
+
+    return Response({
+        "total_calls": total_calls,
+        # Можно добавить другие поля позже:
+        # "crisis_calls": ...,
+        # "avg_duration": ...,
+        # "help_rate": ...,
+    })

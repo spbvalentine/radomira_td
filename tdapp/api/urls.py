@@ -21,4 +21,5 @@ router.register(r'crisis-situations', views.CrisisSituationViewSet, basename='cr
 
 urlpatterns = [
     path('', include(router.urls)),
+    path('stats/summary/', views.stats_summary, name='stats_summary'),
 ]

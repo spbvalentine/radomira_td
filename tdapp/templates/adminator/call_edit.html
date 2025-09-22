@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>Редактирование звонка</title>
+  <title>Редактирование обращения</title>
 
   <!-- Adminator JS -->
   <script defer src="/static/adminator/main.js"></script>
@@ -65,9 +65,14 @@
     }
 
     /* Кнопки навигации */
-    #prevCallBtn:disabled, #nextCallBtn:disabled {
+    #prevCallBtn:disabled, #nextCallBtn:disabled,
+    #firstCallBtn:disabled, #lastCallBtn:disabled {
       opacity: 0.6;
       cursor: not-allowed;
+    }
+
+    .btn-group .btn {
+      transition: all 0.2s ease;
     }
   </style>
 </head>
@@ -96,13 +101,19 @@
             <div class="bgc-white p-20 bd">
               <!-- Заголовок с кнопками навигации -->
               <div class="d-flex justify-content-between align-items-center mb-3">
-                <h4 class="c-grey-900 m-0">Редактирование звонка ID: <span id="callId"></span></h4>
-                <div>
-                  <button id="prevCallBtn" class="btn btn-outline-secondary me-2" disabled>
-                    <i class="fas fa-arrow-left"></i> Предыдущий
+                <h4 class="c-grey-900 m-0">Редактирование обращения ID: <span id="callId"></span></h4>
+                <div class="btn-group" role="group">
+                  <button id="firstCallBtn" class="btn btn-outline-secondary" title="Первое обращение" disabled>
+                    <i class="fas fa-step-backward"></i>
                   </button>
-                  <button id="nextCallBtn" class="btn btn-outline-secondary" disabled>
-                    Следующий <i class="fas fa-arrow-right"></i>
+                  <button id="prevCallBtn" class="btn btn-outline-secondary" title="Предыдущее обращение" disabled>
+                    <i class="fas fa-arrow-left"></i>
+                  </button>
+                  <button id="nextCallBtn" class="btn btn-outline-secondary" title="Следующее обращение" disabled>
+                    <i class="fas fa-arrow-right"></i>
+                  </button>
+                  <button id="lastCallBtn" class="btn btn-outline-secondary" title="Последнее обращение" disabled>
+                    <i class="fas fa-step-forward"></i>
                   </button>
                 </div>
               </div>
@@ -373,7 +384,7 @@
       saveBtn.classList.toggle('btn-secondary', !hasChanges);
     }
 
-    // Проверка существования звонка по ID
+    // Проверка существования обращения по ID
     async function checkCallExists(callId) {
       try {
         const response = await fetch(`/api/calls/${callId}/`);
@@ -383,15 +394,43 @@
       }
     }
 
+    // Получить первый ID обращения
+    async function getFirstCallId() {
+      try {
+        const response = await fetch('/api/calls/?ordering=id&page_size=1');
+        if (!response.ok) throw new Error('Не удалось получить первый звонок');
+        const data = await response.json();
+        return data.results.length > 0 ? data.results[0].id : null;
+      } catch (error) {
+        console.error("Ошибка получения первого ID:", error);
+        return null;
+      }
+    }
+
+    // Получить последний ID обращения
+    async function getLastCallId() {
+      try {
+        const response = await fetch('/api/calls/?ordering=-id&page_size=1');
+        if (!response.ok) throw new Error('Не удалось получить последний звонок');
+        const data = await response.json();
+        return data.results.length > 0 ? data.results[0].id : null;
+      } catch (error) {
+        console.error("Ошибка получения последнего ID:", error);
+        return null;
+      }
+    }
+
     // Обновление состояния кнопок навигации
     async function updateNavButtons(currentId) {
       const prevBtn = document.getElementById('prevCallBtn');
       const nextBtn = document.getElementById('nextCallBtn');
+      const firstBtn = document.getElementById('firstCallBtn');
+      const lastBtn = document.getElementById('lastCallBtn');
 
-      const prevId = parseInt(currentId) - 1;
-      const nextId = parseInt(currentId) + 1;
+      const currentIdNum = parseInt(currentId);
 
       // Проверяем предыдущий звонок
+      const prevId = currentIdNum - 1;
       const prevExists = await checkCallExists(prevId);
       prevBtn.disabled = !prevExists;
       if (prevExists) {
@@ -401,6 +440,7 @@
       }
 
       // Проверяем следующий звонок
+      const nextId = currentIdNum + 1;
       const nextExists = await checkCallExists(nextId);
       nextBtn.disabled = !nextExists;
       if (nextExists) {
@@ -408,16 +448,36 @@
       } else {
         nextBtn.onclick = null;
       }
+
+      // Получаем первый и последний ID
+      const firstId = await getFirstCallId();
+      const lastId = await getLastCallId();
+
+      // Обновляем кнопку "В начало"
+      firstBtn.disabled = !firstId || currentIdNum === firstId;
+      if (firstId && currentIdNum !== firstId) {
+        firstBtn.onclick = () => navigateToCall(firstId);
+      } else {
+        firstBtn.onclick = null;
+      }
+
+      // Обновляем кнопку "В конец"
+      lastBtn.disabled = !lastId || currentIdNum === lastId;
+      if (lastId && currentIdNum !== lastId) {
+        lastBtn.onclick = () => navigateToCall(lastId);
+      } else {
+        lastBtn.onclick = null;
+      }
     }
 
-    // Переход к другому звонку
+    // Переход к другому обращению
     function navigateToCall(callId) {
       const loader = document.getElementById('loader');
       loader.classList.remove('fadeOut'); // Показываем загрузчик
       window.location.href = `/calls/${callId}/`;
     }
 
-    // Загрузка данных о звонке
+    // Загрузка данных об обращении
     async function loadCall() {
       try {
         const response = await fetch(`/api/calls/${callId}/`);
@@ -463,7 +523,7 @@
 
       } catch (error) {
         console.error("Ошибка загрузки:", error);
-        showToast("Не удалось загрузить данные звонка", "danger");
+        showToast("Не удалось загрузить данные обращения", "danger");
         document.getElementById('loader').classList.add('fadeOut');
       }
     }
@@ -517,7 +577,7 @@
         dateInput.value = today;
       }
 
-      loadCall(); // Загружаем данные звонка
+      loadCall(); // Загружаем данные обращения
     });
 
   </script>
